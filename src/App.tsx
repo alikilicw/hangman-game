@@ -76,7 +76,7 @@ function App() {
       {isWinner && 'Winner!! - Press enter to try again.'}
       {isLoser && 'Loser!! - Press enter to try again.'}
     </div>
-    <HangmanDrawing numberOfGuesses={incorrectLetters.length}/>
+    <HangmanDrawing numberOfWrongGuesses={incorrectLetters.length}/>
     <HangmanWord reveal={isLoser} guessedLetters={guessedLetters} wordToGuess={wordToGuess} />
     <div style={{alignSelf: 'stretch'}}>
       <Keyboard 
